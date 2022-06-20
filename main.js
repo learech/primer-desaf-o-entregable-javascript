@@ -19,7 +19,7 @@ function pedirNombre() {
 
 pedirNombre();
 alert(
-  "Bienvenido al gimnasio del Hotel Palomo " +
+  "Bienvenido al gimnasio del Hotel Palomo, " +
     nombre +
     ". Contamos con servicios por día para nuestros huéspedes. Sigue los pasos para elegir las opciones disponibles."
 );
@@ -28,7 +28,7 @@ function pedirDni() {
   dni = prompt("Ingrese su número de documento");
   while (isNaN(parseInt(dni)) || dni.length < 7 || dni.length > 9) {
     dni = prompt(
-      "Ingrese su número de documento. Debe ser un número entre 7 y 9 caracteres"
+      "Ingrese correctamente su número de documento. Debe ser un número entre 7 y 9 caracteres"
     );
   }
 }
@@ -46,7 +46,7 @@ function calcularPrecio(valorPlan) {
 }
 
 do {
-    dias = prompt("Ingresa la cantidad de días que deseas asistir al gimnasio")
+    dias = Number (prompt("Ingresa la cantidad de días que deseas asistir al gimnasio. Exprésalo en dígitos."));
     operacion = prompt("¿Qué actividad deseas realizar? Musculación (M), Funcional (F), Crossfit (C) o Boxeo (B).")
     switch (operacion) {
         case "M":
@@ -72,7 +72,8 @@ do {
             break;
     }
     nuevaOperacion = confirm("Quieres realizar otra actividad?")
-} while (nuevaOperacion)
+} while (nuevaOperacion);
+alert ("Disfrutá de nuestro gimnasio. Saludos " + nombre)
 
 
 
