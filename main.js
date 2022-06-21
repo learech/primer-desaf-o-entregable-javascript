@@ -19,7 +19,7 @@ function pedirNombre() {
 
 pedirNombre();
 alert(
-  "Bienvenido al gimnasio del Hotel Palomo, " +
+  "Te damos la bienvenida al gimnasio del Hotel Palomo, " +
     nombre +
     ". Contamos con servicios por día para nuestros huéspedes. Sigue los pasos para elegir las opciones disponibles."
 );
