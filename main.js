@@ -11,9 +11,9 @@ let nuevaOperacion = false
 
 
 function pedirNombre() {
-  nombre = prompt("Ingrese su nombre y apellido").toUpperCase();
+  nombre = prompt("Ingrese su nombre").toUpperCase();
   while (nombre === "" || !isNaN(nombre)) {
-    nombre = prompt("Ingrese su nombre");
+    nombre = prompt("Ingrese su nombre correctamente.");
   }
 }
 
